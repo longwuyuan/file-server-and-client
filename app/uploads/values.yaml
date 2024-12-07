@@ -1,0 +1,12 @@
+USER-SUPPLIED VALUES:
+controller:
+  extraArgs:
+    default-ssl-certificate: ingress-nginx/wildcard.dev.enjoydevops.com
+  metrics:
+    enabled: true
+    serviceMonitor:
+      additionalLabels:
+        release: prometheusgrafana
+      enabled: true
+  service:
+    externalTrafficPolicy: Local
